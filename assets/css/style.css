@@ -26,8 +26,28 @@ h1{
 }
 
 button{
-    height: 4em;
-    width: 2.5em;
+    height: 6em;
+    width: 6em;
+}
+
+#red{
+    background-image: url("/assets/images/red.jpg");
+    background-size: cover;
+}
+
+#blue{
+    background-image: url("/assets/images/blue.jpg");
+    background-size: cover;
+}
+
+#yellow{
+    background-image: url("/assets/images/yellow.jpg");
+    background-size: cover;
+}
+
+#green{
+    background-image: url("/assets/images/green.jpg");
+    background-size: cover;
 }
 
 .currentScore{
