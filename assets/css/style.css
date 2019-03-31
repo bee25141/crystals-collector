@@ -1,0 +1,42 @@
+body{
+    background-image: url("/assets/images/dark-paths.png");
+    background-size: cover;
+}
+h1{
+    background-color: #f48f42;
+    color: #f9f7f4;
+    text-align: center;
+}
+
+#instructions{
+    background-color: #f9f7f4;
+    color: #f48f42;
+}
+
+#computerNumber{
+    background-color: #f48f42;
+    color: #f9f7f4;
+    height: 7.5em;
+}
+
+#scoreboard{
+    background-color: #f48f42;
+    color: #f9f7f4;
+    height: 7.5em;
+}
+
+button{
+    height: 4em;
+    width: 2.5em;
+}
+
+.currentScore{
+    background-color: #f9f7f4;
+    color: #f48f42;
+}
+
+.score{
+    background-color: #f48f42;
+    color: #f9f7f4;
+    height: 5em;
+}
