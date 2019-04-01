@@ -18,9 +18,10 @@ function randomNumberGenerate(){
 randomNumberGenerate();
 
 function scoreCalculate(x,){
-   var newCurrentScore = (currentScore += x);
-   $(".score").text(newCurrentScore);
+   var newCurrentScore = (currentScore += (x));
+   $(".score").text(currentScore);
    console.log("newCurrentScore", newCurrentScore);
+   console.log("currentScore", currentScore);
    
 
 }
@@ -30,6 +31,7 @@ $("#red").on("click", function(){
     console.log("red", red);
     score = parseInt(red) + parseInt(currentScore);
     console.log("score", score);
+    
     scoreCalculate(score);
     score = "";
     
