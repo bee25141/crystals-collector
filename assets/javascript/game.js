@@ -17,9 +17,11 @@ function randomNumberGenerate(){
 }
 randomNumberGenerate();
 
-function scoreCalculate(x){
-   var newScore = (parseInt(currentScore) + x);
-   return newScore;
+function scoreCalculate(x,){
+   var newCurrentScore = (currentScore += x);
+   $(".score").text(newCurrentScore);
+   console.log("newCurrentScore", newCurrentScore);
+   
 
 }
 
@@ -28,7 +30,9 @@ $("#red").on("click", function(){
     console.log("red", red);
     score = parseInt(red) + parseInt(currentScore);
     console.log("score", score);
-    $(".score").add(score);
+    scoreCalculate(score);
+    score = "";
+    
 })
 $("#blue").on("click", function(){
     console.log("blue", blue);
@@ -48,6 +52,6 @@ $("#green").on("click", function(){
 })
 
 
-$(".score").text(currentScore);
+
 $(".computerNumber").text(randomNumber);
 console.log(randomNumber, red, blue, yellow, green);
