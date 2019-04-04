@@ -2,10 +2,10 @@
 var currentScore = 0;
 var wins = 0;
 var losses = 0;
-var red = 0;
-var blue = 0;
-var yellow = 0;
-var green = 0;
+// var red = 0;
+// var blue = 0;
+// var yellow = 0;
+// var green = 0;
 
 //This function generates a random number for the randomNumber and crystals
 function randomNumberGenerate() {
@@ -18,7 +18,7 @@ function randomNumberGenerate() {
 
 
     function scoreCalculate(x) {
-        // debugger;
+        debugger;
         currentScore = (currentScore + x);
         newCurrentScore = currentScore;
         $(".score").text(newCurrentScore);
@@ -32,17 +32,17 @@ function randomNumberGenerate() {
         }
         $(".wins").text("Wins: " + wins);
         $(".losses").text("Losses: " + losses);
-        return x;
+        // return x;
     }
 
     function reset() {
         currentScore = 0;
         newCurrentScore = 0;
         $(".score").text(currentScore);
-        red = 0;
-        blue = 0;
-        yellow = 0;
-        green = 0;
+        // red = 0;
+        // blue = 0;
+        // yellow = 0;
+        // green = 0;
         randomNumberGenerate();
         console.log("red", red);
         console.log("blue", blue);
@@ -57,6 +57,7 @@ function randomNumberGenerate() {
 
     $("#red").on("click", function () {
         scoreCalculate(parseInt(red));
+        return red;
     })
     $("#blue").on("click", function () {
         scoreCalculate(parseInt(blue));
