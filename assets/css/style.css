@@ -29,6 +29,15 @@ h1{
     color: #f9f7f4;
     height: 7.5em;
     font-family: 'Caveat Brush', cursive;
+    font-size: 1em;
+}
+
+.wins{
+    height: 2em;
+}
+
+.losses{
+    height: 2em;
 }
 
 button{
