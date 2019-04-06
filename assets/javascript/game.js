@@ -7,6 +7,11 @@ var blue = 0;
 var yellow = 0;
 var green = 0;
 
+//Calls randomNumberGenerate at start of page
+$(document).ready(function(){
+randomNumberGenerate();
+});
+
 function reset() {
     currentScore = 0;
     $(".score").text(currentScore);
@@ -28,8 +33,27 @@ function randomNumberGenerate() {
     green = [Math.floor(Math.random() * 12) + 1];
     $(".computerNumber").text(randomNumber);
     console.log(randomNumber, red, blue, yellow, green);
-} 
+};
 
+/*This function calculates and displays the current user score with the crystal values, 
+    and calculates wins and losses based on current score and the random computer number*/
+    function scoreCalculate(x) {
+        currentScore = (currentScore + x); 
+        $(".score").text(currentScore);
+        if (parseInt(currentScore) === parseInt(randomNumber)) {
+            wins++;
+            reset();
+        }
+        if (parseInt(currentScore) > parseInt(randomNumber)) {
+            losses++;
+            reset();
+        }
+        //This updates the wins and losses UI
+        $(".wins").text("Wins: " + wins);
+        $(".losses").text("Losses: " + losses);
+    };
+
+    //These functions add the crystal values upon user click
     $("#red").on("click", function () {
         
         scoreCalculate(parseInt(red));
@@ -46,33 +70,7 @@ function randomNumberGenerate() {
         scoreCalculate(parseInt(green));
     });
 
-    
-    function scoreCalculate(x) {
-        currentScore = (currentScore + x); 
-        newCurrentScore = currentScore;
-        // currentScore = 0;
-        debugger;
-        $(".score").text(newCurrentScore);
-        if (parseInt(newCurrentScore) === parseInt(randomNumber)) {
-            wins++;
-            reset();
-        }
-        if (parseInt(newCurrentScore) > parseInt(randomNumber)) {
-            losses++;
-            reset();
-        }
-        $(".wins").text("Wins: " + wins);
-        $(".losses").text("Losses: " + losses);
-        // return currentScore;
-    }
-
+    //Start UI wins & losses
     $(".wins").text("Wins: " + wins);
     $(".losses").text("Losses: " + losses);
-
-
-    
-  
-    
-
-randomNumberGenerate();
 
