@@ -1,3 +1,4 @@
+//Assigns initial variables
 var randomNumber = 0;
 var currentScore = 0;
 var wins = 0;
@@ -12,6 +13,7 @@ $(document).ready(function(){
 randomNumberGenerate();
 });
 
+//This function resets the game after a win or loss, assigning new random values to the crystals and random number
 function reset() {
     currentScore = 0;
     $(".score").text(currentScore);
@@ -22,7 +24,7 @@ function reset() {
     console.log("green", green);
     console.log("currentScore", currentScore);
     console.log("newCurrentScore", newCurrentScore);
-}
+};
 
 //This function generates a random number for the randomNumber and crystals
 function randomNumberGenerate() {

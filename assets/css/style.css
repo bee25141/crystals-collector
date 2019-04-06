@@ -6,13 +6,13 @@ h1{
     background-color: #f48f42;
     color: #f9f7f4;
     text-align: center;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Dokdo', cursive;
 }
 
 #instructions{
     background-color: #f9f7f4;
     color: #f48f42;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Dokdo', cursive;
     font-size: 1.25em
 }
 
@@ -21,14 +21,14 @@ h1{
     color: #f9f7f4;
     height: 7.5em;
     text-align: center;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Dokdo', cursive;
 }
 
 #scoreboard{
     background-color: #f48f42;
     color: #f9f7f4;
     height: 7.5em;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Dokdo', cursive;
     font-size: 1em;
 }
 
@@ -69,7 +69,7 @@ button{
     background-color: #f9f7f4;
     color: #f48f42;
     text-align: center;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Dokdo', cursive;
 }
 
 .score{
