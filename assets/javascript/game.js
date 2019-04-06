@@ -7,6 +7,18 @@ var blue = 0;
 var yellow = 0;
 var green = 0;
 
+function reset() {
+    currentScore = 0;
+    $(".score").text(currentScore);
+    randomNumberGenerate();
+    console.log("red", red);
+    console.log("blue", blue);
+    console.log("yellow", yellow);
+    console.log("green", green);
+    console.log("currentScore", currentScore);
+    console.log("newCurrentScore", newCurrentScore);
+}
+
 //This function generates a random number for the randomNumber and crystals
 function randomNumberGenerate() {
     randomNumber = [Math.floor(Math.random() * 102) + 19];
@@ -16,34 +28,23 @@ function randomNumberGenerate() {
     green = [Math.floor(Math.random() * 12) + 1];
     $(".computerNumber").text(randomNumber);
     console.log(randomNumber, red, blue, yellow, green);
-
-    function reset() {
-        currentScore = 0;
-        $(".score").text(currentScore);
-        randomNumberGenerate();
-        console.log("red", red);
-        console.log("blue", blue);
-        console.log("yellow", yellow);
-        console.log("green", green);
-        console.log("currentScore", currentScore);
-        console.log("newCurrentScore", newCurrentScore);
-    }
+} 
 
     $("#red").on("click", function () {
         
         scoreCalculate(parseInt(red));
         // return red;
-    })
+    });
     $("#blue").on("click", function () {
         scoreCalculate(parseInt(blue));
 
-    })
+    });
     $("#yellow").on("click", function () {
         scoreCalculate(parseInt(yellow));
-    })
+    });
     $("#green").on("click", function () {
         scoreCalculate(parseInt(green));
-    })
+    });
 
     
     function scoreCalculate(x) {
@@ -68,7 +69,6 @@ function randomNumberGenerate() {
     $(".wins").text("Wins: " + wins);
     $(".losses").text("Losses: " + losses);
 
-}
 
     
   
