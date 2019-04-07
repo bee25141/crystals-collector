@@ -7,8 +7,8 @@ h1{
     color: #efefef;
     text-align: center;
     font-family: 'Dokdo', cursive;
-    height: 1.25em;
-    font-size: 3em;
+    height: 2em;
+    font-size: 3.5em;
 }
 
 #instructions{
@@ -21,7 +21,7 @@ h1{
 #computerNumber{
     background-color: #f48f42;
     color: #efefef;
-    height: 4em;
+    height: 3em;
     text-align: center;
     font-family: 'Dokdo', cursive;
     font-size: 3em;
@@ -30,7 +30,7 @@ h1{
 #scoreboard{
     background-color: #f48f42;
     color: #efefef;
-    height: 6em;
+    height: 4.5em;
     font-family: 'Dokdo', cursive;
     font-size: 2em;
 }
