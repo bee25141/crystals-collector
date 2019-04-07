@@ -40,19 +40,20 @@ function randomNumberGenerate() {
 /*This function calculates and displays the current user score with the crystal values, 
     and calculates wins and losses based on current score and the random computer number*/
     function scoreCalculate(x) {
+        debugger;
         currentScore = (currentScore + x); 
         $(".score").text(currentScore);
         if (parseInt(currentScore) === parseInt(randomNumber)) {
             wins++;
+            $(".wins").text("Wins: " + wins);
             reset();
         }
         if (parseInt(currentScore) > parseInt(randomNumber)) {
             losses++;
+            $(".losses").text("Losses: " + losses);
             reset();
         }
-        //This updates the wins and losses UI
-        $(".wins").text("Wins: " + wins);
-        $(".losses").text("Losses: " + losses);
+
     };
 
     //These functions add the crystal values upon user click

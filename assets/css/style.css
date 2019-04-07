@@ -4,40 +4,45 @@ body{
 }
 h1{
     background-color: #f48f42;
-    color: #f9f7f4;
+    color: #efefef;
     text-align: center;
     font-family: 'Dokdo', cursive;
+    height: 1.25em;
+    font-size: 3em;
 }
 
 #instructions{
-    background-color: #f9f7f4;
+    background-color: #efefef;
     color: #f48f42;
     font-family: 'Dokdo', cursive;
-    font-size: 1.25em
+    font-size: 1.75em;
 }
 
 #computerNumber{
     background-color: #f48f42;
-    color: #f9f7f4;
-    height: 7.5em;
+    color: #efefef;
+    height: 4em;
     text-align: center;
     font-family: 'Dokdo', cursive;
+    font-size: 3em;
 }
 
 #scoreboard{
     background-color: #f48f42;
-    color: #f9f7f4;
-    height: 7.5em;
+    color: #efefef;
+    height: 6em;
     font-family: 'Dokdo', cursive;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .wins{
-    height: 2em;
+    height: 1em;
+    font-size: 1.5em;
 }
 
 .losses{
-    height: 2em;
+    height: 1em;
+    font-size: 1.5em;
 }
 
 button{
@@ -66,14 +71,19 @@ button{
 }
 
 .currentScore{
-    background-color: #f9f7f4;
+    background-color: #efefef;
     color: #f48f42;
     text-align: center;
     font-family: 'Dokdo', cursive;
+    font-size: 1.25em;
+    height: 1.5em;
 }
 
 .score{
     background-color: #f48f42;
-    color: #f9f7f4;
-    height: 5em;
+    color: #efefef;
+    height: 2em;
+    font-size: 3em;
+    font-family: 'Dokdo', cursive;
+    text-align: center;
 }
