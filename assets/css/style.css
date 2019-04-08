@@ -45,6 +45,10 @@ h1{
     font-size: 1.5em;
 }
 
+#crystalContainer{
+    align-content: center;
+}
+
 button{
     height: 6em;
     width: 6em;
