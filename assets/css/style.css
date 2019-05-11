@@ -1,5 +1,5 @@
 body{
-    background-image: url("/assets/images/dark-paths.png");
+    background-image: url("/crystals-collector/assets/images/dark-paths.png");
     background-size: cover;
 }
 h1{
@@ -55,22 +55,22 @@ button{
 }
 
 #red{
-    background-image: url("/assets/images/red.jpg");
+    background-image: url("/crystals-collector/assets/images/red.jpg");
     background-size: cover;
 }
 
 #blue{
-    background-image: url("/assets/images/blue.jpg");
+    background-image: url("/crystals-collector/assets/images/blue.jpg");
     background-size: cover;
 }
 
 #yellow{
-    background-image: url("/assets/images/yellow.jpg");
+    background-image: url("/crystals-collector/assets/images/yellow.jpg");
     background-size: cover;
 }
 
 #green{
-    background-image: url("/assets/images/green.jpg");
+    background-image: url("/crystals-collector/assets/images/green.jpg");
     background-size: cover;
 }
 
