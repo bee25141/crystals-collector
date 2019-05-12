@@ -18,12 +18,6 @@ function reset() {
     currentScore = 0;
     $(".score").text(currentScore);
     randomNumberGenerate();
-    console.log("red", red);
-    console.log("blue", blue);
-    console.log("yellow", yellow);
-    console.log("green", green);
-    console.log("currentScore", currentScore);
-    console.log("newCurrentScore", newCurrentScore);
 };
 
 //This function generates a random number for the randomNumber and crystals
